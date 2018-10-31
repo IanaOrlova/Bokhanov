@@ -46,6 +46,30 @@
   font-style: normal;
 
 }
+.img{
+  cursor: pointer;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.cz{
+  max-width: 397px;
+  display: block;
+  cursor: pointer;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+source{
+  cursor: pointer;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+
 
 #player {
   height: 0;
