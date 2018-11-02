@@ -2,22 +2,11 @@
 @import "mixin";
 @import "normalize";
 
-@font-face {
-  font-family: 'latoblack';
-  src: url('../fonts/latoblack-webfont.woff2') format('woff2'),
-  url('../fonts/latoblack-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
-
-
 
 @font-face {
   font-family: 'latobold';
-  src: url('../fonts/latobold-webfont.woff2') format('woff2'),
-  url('../fonts/latobold-webfont.woff') format('woff');
+  src: url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+  url('../fonts/lato-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -28,8 +17,18 @@
 
 @font-face {
   font-family: 'latoregular';
-  src: url('../fonts/latoregular-webfont.woff2') format('woff2'),
-  url('../fonts/latoregular-webfont.woff') format('woff');
+  src: url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+  url('../fonts/lato-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'latoblack';
+  src: url('../fonts/lato-black.ttf') format('ttf'),
+  url('../fonts/lato-black.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 
@@ -40,8 +39,8 @@
 
 @font-face {
   font-family: 'latosemibold';
-  src: url('../fonts/latosemibold-webfont.woff2') format('woff2'),
-  url('../fonts/latosemibold-webfont.woff') format('woff');
+  src: url('../fonts/lato-semibold.ttf') format('ttf'),
+  url('../fonts/lato-semibold.ttf') format('ttf');
   font-weight: normal;
   font-style: normal;
 
@@ -82,12 +81,12 @@ source{
   background-size: 200%;
   background-position: 100% 0;
   height: 65px;
-  width: 47px;
+  width: 36px;
   cursor: pointer;
   display: block;
   position: relative;
-  top: 188px;
-  right: 387px;
+  top: 193px;
+  right: 403px;
   margin: 0 auto;
   margin-right: 0;
 }
@@ -159,7 +158,8 @@ header{
       padding-top: 25px;
       text-transform: uppercase;
       li{
-        font-family:'latobold-demo', sans-serif ;
+        font-family: 'latoregular', sans-serif ;
+        letter-spacing: 1px;
         margin-left: 28px;
         margin-right: 28px;
         position: relative;
@@ -204,7 +204,7 @@ header{
   .header_text{
     max-width: 800px;
     h3{
-      font-family:'latoblack-demo', sans-serif ;
+      font-family:'latobold', sans-serif ;
       position: relative;
       padding-top: 35%;
       font-size: 85px;
@@ -504,7 +504,7 @@ header{
           background: $colorOne;
         }
         p{
-          max-width: 295px;
+          max-width: 300px;
           margin: 0 auto;
           font-family:'latoregular-demo', sans-serif ;
           font-size: 18px;
@@ -586,7 +586,7 @@ header{
     height:393px;
     color: black;
     text-align: center;
-    width: 1170px;
+    max-width: 1170px;
     margin: 0 auto ;
     box-shadow: inset 1px -1px 49px -6px rgba(0,0,0,0.38);
     .rew{
@@ -670,9 +670,14 @@ header{
   }
   .gallery{
     display: flex;
-    justify-content: space-between;
 
+    .flex{
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+    }
   }
+
 }
 
 
@@ -712,64 +717,101 @@ footer{
   width: 100%;
   bottom: 0;
 .container{
-  display: flex;
-
-  .flex_left{
     display: flex;
-    justify-content: space-around;
-    width: 70%;
-    .logo{
-      padding-top: 17px;
-      padding-bottom: 11px;
-      img{
-        width: 54px;
-        height: 54px;
+    .flex_left{
+      display: flex;
+      justify-content: space-around;
+      width: 70%;
+      .logo{
+        padding-top: 17px;
+        padding-bottom: 11px;
+        img{
+          width: 54px;
+          height: 54px;
+        }
+
       }
-
+      p{
+        font-family:'latoblack-demo', sans-serif ;
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+        padding-top: 35px;
+      }
     }
-    p{
-      font-family:'latoblack-demo', sans-serif ;
-      font-size: 14px;
-      letter-spacing: 1px;
-      line-height: 24px;
-      color: #ffffff;
-      padding-top: 35px;
-    }
-  }
-  .flex_right{
-    display: flex;
-    justify-content: space-around;
-    width: 30%;
-    ul{
-      li{
-        display: inline-block;
-        padding-top: 30px;
-        padding-left: 13px;
-        padding-right: 13px;
-        svg{
-          transition: .8s;
-          &:hover{
+    .flex_right{
+      display: flex;
+      justify-content: space-around;
+      width: 30%;
+      ul{
+        li{
+          display: inline-block;
+          padding-top: 30px;
+          padding-left: 13px;
+          padding-right: 13px;
+          svg{
             transition: .8s;
-            cursor: pointer;
-            fill: $colorOne;
+            &:hover{
+              transition: .8s;
+              cursor: pointer;
+              fill: $colorOne;
 
+            }
           }
         }
-      }
 
-    }
-    p{
-      font-family:'latoblack-demo', sans-serif ;
-      padding-top: 35px;
-      font-size: 18px;
-      letter-spacing: 1px;
-      line-height: 24px;
-      color: #ffffff;
+      }
+      p{
+        font-family:'latoblack-demo', sans-serif ;
+        padding-top: 35px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        line-height: 24px;
+        color: #ffffff;
+      }
     }
   }
 }
 
 
 
+@media all and  (max-width: 1200px) {
+  .fourth {
+    .slide {
+      max-width: 900px;
+      .rew {
+        p {
+          max-width: 600px;
+          margin: 0 auto;
+        }
+      }
+
+    }
+    .slide-wrap {
+      &:before {
+        content: none;
+
+      }
+      &:after {
+        content: none;
+
+      }
+    }
+  }
+  .fifth{
+
+    .gallery{
+      display: block;
+      .flex{
+
+        max-width: 900px;
+        margin: 0 auto;
+        .img{
+          padding: 20px;
+        }
+      }
+    }
+  }
 
 }
