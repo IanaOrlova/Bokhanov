@@ -335,7 +335,7 @@ header{
     padding-top: 50px;
     margin-bottom: 20px;
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     margin: 0 auto;
     line-height: 1.5;
 
@@ -345,9 +345,9 @@ header{
   .tabs {
     display: table;
     position: relative;
-    overflow: hidden;
+    //overflow: hidden;
     margin: 0 auto;
-    width: 910px;
+    max-width: 930px;
     padding-left: 0;
 
     li {
@@ -504,7 +504,7 @@ header{
           background: $colorOne;
         }
         p{
-          max-width: 300px;
+          max-width: 330px;
           margin: 0 auto;
           font-family:'latoregular-demo', sans-serif ;
           font-size: 18px;
@@ -656,7 +656,7 @@ header{
       text-transform: uppercase;
       padding-bottom: 135px;
       position: relative;
-      max-width: 270px;
+      max-width: 300px;
       margin: 0 auto;
       &:before{
       content: "";
@@ -675,6 +675,10 @@ header{
       width: 50%;
       display: flex;
       justify-content: space-around;
+      .img{
+        padding: 20px;
+      }
+
     }
   }
 
