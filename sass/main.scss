@@ -318,15 +318,20 @@ header{
 
     }
   }
-  .row {
+  .st3{
     display: flex;
-    width: 100%;
-    .img {
-      img {
-        display: block;
+    max-width: 1100px;
+    .st2 {
+      display: flex;
+      width: 100%;
+      .img {
+        img {
+          display: block;
+        }
       }
     }
   }
+
 
 
 
@@ -781,6 +786,18 @@ footer{
 
 
 @media all and  (max-width: 1200px) {
+
+  .second{
+    .st3{
+      display: inline-block;
+      .last{
+        display: flex;
+        .none{
+          display: none;
+        }
+      }
+    }
+  }
   .fourth {
     .slide {
       max-width: 900px;
