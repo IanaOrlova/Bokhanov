@@ -12,7 +12,10 @@
 
 }
 
-
+video{
+  //background: transparent url('../img/girl.png') 50% 50% / cover no-repeat;
+  object-fit: cover;
+}
 
 
 @font-face {
