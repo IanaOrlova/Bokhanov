@@ -20,6 +20,8 @@ $(document).ready(function () {
 
 
 //скрол//
+
+
     $(document).on("scroll", onScroll);
 
     $('a[href^="#"]').on('click', function (e) {
@@ -45,8 +47,8 @@ $(document).ready(function () {
 
     Revealator.effects_padding = '-200';
 
-
 //динамик//
+
     var getaudio = $('#player')[0];
     var mouseovertimer;
     var audiostatus = 'off';
@@ -78,68 +80,6 @@ $(document).ready(function () {
             audiostatus = 'on';
         }
     });
-
-
-
-
-
-
-//карта//
-
-    // var mapContainer = document.getElementById('map');
-    //
-    // showMap(document.getElementById('map'),  47.846449,   35.139038 );
-    //
-    // function showMap(mapContaine, lat, lon) {
-    //     var center = new google.maps.LatLng(lat, lon);
-    //
-    //     var marker = new google.maps.Marker({
-    //         position: {lat: 47.846449, lng: 35.139038},
-    //         icon: {
-    //             url: "script/placeholder.png",
-    //             scaledSize: new google.maps.Size(47, 66)
-    //         }
-    //     });
-    //
-    //     var mapProp = {
-    //         center: center,
-    //         zoom: 17,
-    //         zoomControl: false,
-    //         disableDefaultUI: true,
-    //         //
-    //     };
-    //
-    //     // var map = new google.maps.Map(mapContainer, mapProp, style);
-    //     // marker.setMap(map);
-    //     var style =[
-    //         {
-    //             "featureType": "administrative",
-    //             "elementType": "all",
-    //             "stylers": [
-    //                 {
-    //                     "visibility": "simplified"
-    //                 },
-    //                 {
-    //                     "gamma": "1.00"
-    //                 }
-    //             ]
-    //         },
-    //             {
-    //                 "featureType": "administrative.locality",
-    //                 "elementType": "labels",
-    //                 "stylers": [
-    //                     {
-    //                         "color": "#ba5858"
-    //                     }
-    //                 ]
-    //             }
-    //             ]
-    //
-    //     var map = new google.maps.Map(mapContainer, mapProp, style);
-    //     marker.setMap(map);
-    //
-    // }
-
 
 
     map = new google.maps.Map(document.getElementById('map'), {
@@ -404,64 +344,54 @@ $(document).ready(function () {
     });
 
 
-
-//слайдер//
-
 });
 
-var $slide = $('.slide'),
+
+    //слайдер//
+
+    var $slide = $('.slide'),
     $slideGroup = $('.slide-group'),
     $bullet = $('.bullet');
 
-var slidesTotal = ($slide.length - 1),
+    var slidesTotal = ($slide.length - 1),
     current = 0,
     isAutoSliding = true;
 
-$bullet.first().addClass('current');
+    $bullet.first().addClass('current');
 
-var clickSlide = function() {
-    //stop auto sliding
-    window.clearInterval(autoSlide);
-    isAutoSliding = false;
+    var clickSlide = function() {
 
-    var slideIndex = $bullet.index($(this));
+        window.clearInterval(autoSlide);
+        isAutoSliding = false;
 
-    updateIndex(slideIndex);
-};
+        var slideIndex = $bullet.index($(this));
 
-var updateIndex = function(currentSlide) {
-    if(isAutoSliding) {
-        if(current === slidesTotal) {
-            current = 0;
-        } else {
-            current++;
-        }
-    } else {
-        current = currentSlide;
-    }
+        updateIndex(slideIndex);
+    };
 
-    $bullet.removeClass('current');
-    $bullet.eq(current).addClass('current');
+    var updateIndex = function(currentSlide) {
+        if(isAutoSliding) {
+            if(current === slidesTotal) {
+                current = 0;
+            } else {current++;}
+        } else {current = currentSlide;}
 
-    transition(current);
-};
+        $bullet.removeClass('current');
+        $bullet.eq(current).addClass('current');
 
-var transition = function(slidePosition) {
-    $slideGroup.animate({
-        'bottom': '-' + slidePosition + '00%'
-    });
-};
+        transition(current);
+    };
 
-$bullet.on( 'click', clickSlide);
+    var transition = function(slidePosition) {
 
-var autoSlide = window.setInterval(updateIndex, 3000);
+        $slideGroup.animate({
+            'bottom': '-' + slidePosition + '00%'
+            });
+        };
 
+        $bullet.on( 'click', clickSlide);
 
-
-
-
-
-
+    var autoSlide = window.setInterval(updateIndex, 3000);
 
 
 

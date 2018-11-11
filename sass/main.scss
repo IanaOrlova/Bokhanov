@@ -759,6 +759,8 @@ footer{
 
 @media all and  (max-width: 1200px) {
 
+
+
   header{
     .logo{
       padding-left: 15px;
@@ -766,6 +768,19 @@ footer{
     .header_text{
       padding-left: 15px;
     }
+
+    #s{
+      display: none;
+    }
+
+    .audio{
+      display: none;
+    }
+
+  #player{
+    display: none;
+  }
+
   }
 
   .second{
@@ -816,24 +831,12 @@ footer{
     }
   }
 
-}
-
-
-@media all and  (max-width: 900px) {
-  header{
-    .container{
-      .speaker{
-        display: none;
-      }
-
-      .audio{
-        display: none;
-      }
-    }
-    #player{
-      display: none;
-    }
-  }
 
 
 }
+
+//@media screen and  (max-width: 900px) {
+//
+//
+//
+//}
