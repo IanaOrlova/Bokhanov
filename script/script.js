@@ -46,19 +46,6 @@ $(document).ready(function () {
     Revealator.effects_padding = '-200';
 
 
-    var bloc = document.querySelector('.speaker');
-    var block1 = document.querySelector('.audio');
-
-
-        if(innerWidth>=900){
-            block1.style.display = "block"
-        }else {block1.style.display = "none";
-
-        }
-
-
-
-
 //динамик//
     var getaudio = $('#player')[0];
     var mouseovertimer;
