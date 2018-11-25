@@ -169,7 +169,7 @@ header{
     }
   }
 
- 
+
 }
 
 .first{
@@ -744,6 +744,7 @@ footer{
         letter-spacing: 1px;
         line-height: 24px;
         color: #ffffff;
+        cursor: pointer;
       }
     }
   }
@@ -762,19 +763,6 @@ footer{
     .header_text{
       padding-left: 15px;
     }
-
-    #s{
-      display: none;
-    }
-
-    .audio{
-      display: none;
-    }
-
-  #player{
-    display: none;
-  }
-
   }
 
   .second{
