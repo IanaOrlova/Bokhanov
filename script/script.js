@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    //=====================  табы ====================//
     (function ($) {
         $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
 
@@ -18,9 +19,7 @@ $(document).ready(function () {
     })(jQuery);
 
 
-
-//скрол//
-
+        //================ скрол ======================//
 
     $(document).on("scroll", onScroll);
 
@@ -47,39 +46,7 @@ $(document).ready(function () {
 
     Revealator.effects_padding = '-200';
 
-//динамик//
-
-    var getaudio = $('#player')[0];
-    var mouseovertimer;
-    var audiostatus = 'off';
-
-    $(document).on('mouseleave', '.speaker', function() {
-        if (mouseovertimer) {
-            window.clearTimeout(mouseovertimer);
-            mouseovertimer = null;
-        }
-    });
-
-    $(document).on('click touchend', '.speaker', function() {
-        if (!$('.speaker').hasClass("speakerplay")) {
-            if (audiostatus == 'off') {
-                $('.speaker').addClass('speakerplay');
-                getaudio.load();
-                getaudio.play();
-                window.clearTimeout(mouseovertimer);
-                audiostatus = 'on';
-                return false;
-            } else if (audiostatus == 'on') {
-                $('.speaker').addClass('speakerplay');
-                getaudio.play()
-            }
-        } else if ($('.speaker').hasClass("speakerplay")) {
-            getaudio.pause();
-            $('.speaker').removeClass('speakerplay');
-            window.clearTimeout(mouseovertimer);
-            audiostatus = 'on';
-        }
-    });
+    //=================== карта =====================//
 
     var mapContainer = document.getElementById('map');
 
@@ -92,7 +59,6 @@ $(document).ready(function () {
             position: {lat:  55.760598, lng: 37.662593},
             icon: {
                 url: "script/map_text.png",
-                // scaledSize: new google.maps.Size(47, 66)
             }
         });
 
@@ -350,8 +316,6 @@ $(document).ready(function () {
                     }
                 ]
 
-
-
         };
 
         var map = new google.maps.Map(mapContainer, mapProp);
@@ -362,7 +326,7 @@ $(document).ready(function () {
 });
 
 
-    //слайдер//
+    //====================== слайдер =====================//
 
     var $slide = $('.slide'),
     $slideGroup = $('.slide-group'),
@@ -409,6 +373,7 @@ $(document).ready(function () {
     var autoSlide = window.setInterval(updateIndex, 3000);
 
 
+    //==================== вторая часть скрола ===================//
 
 function onScroll(){
     var scrollPosition = $(document).scrollTop();
