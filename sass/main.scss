@@ -12,7 +12,7 @@
 video{
   object-fit: cover;
   display: block;
-
+  height: 270.313px;
 }
 
 .img{
@@ -23,7 +23,7 @@ video{
 }
 
 .cz{
-  max-width: 397px;
+  max-width: 400px;
   display: block;
   cursor: pointer;
   &:hover{
@@ -36,10 +36,6 @@ source{
   &:hover{
     cursor: pointer;
   }
-}
-
-video{
-  height: 223.313px;
 }
 
 a{
@@ -71,19 +67,21 @@ header{
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding-bottom: 400px;
+  padding-bottom: 381px;
   nav{
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding-top: 38px;
+    padding-left: 15px;
     li{
       display: inline-block;
     }
 
     .items{
       color: white;
-      padding-top: 25px;
+      padding-top: 41px;
+      padding-left: 240px;
       text-transform: uppercase;
       li{
         font-family: $fontOne;
@@ -115,7 +113,9 @@ header{
       }
     }
     .media{
-      padding-top: 20px;
+      padding-top: 31px;
+      padding-right: 35px;
+      padding-left: 7px;
       li{
         padding-left: 14px;
         padding-right: 14px;
@@ -133,23 +133,24 @@ header{
   }
   .header_text{
     max-width: 800px;
+    padding-left: 10px;
     h3{
       font-family:$fontTwo ;
       position: relative;
-      padding-top: 35%;
+      padding-top: 34%;
       font-size: 72px;
       font-weight: 900;
       letter-spacing: 3px;
       color: #ffffff;
       span{
-        font-family:'latoblack-demo', sans-serif ;
+
         font-weight: 900;
-        font-size: 126px;
+        font-size: 152px;
       }
       &:before{
         content: "";
         position: absolute;
-        bottom:-41px;
+        bottom:-47px;
         left: 8px;
         width: 79px;
         height: 3px;
@@ -163,7 +164,8 @@ header{
       font-size: 19px;
       font-weight: 500;
       line-height: 24px;
-      padding-top: 119px;
+      padding-top: 93px;
+      padding-left: 9px;
       letter-spacing: 1px;
     }
   }
@@ -174,23 +176,23 @@ header{
   text-align: center;
   margin-top: -17%;
   position: relative;
-  padding-top: 25%;
+  padding-top: 20%;
   h5{
     font-family:$fontTwo;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 33px;
     color: #141414;
     text-transform: uppercase;
-    padding-bottom: 162px;
+    padding-top: 45px;
+    padding-bottom: 147px;
     position: relative;
     max-width: 130px;
     margin: 0 auto;
     &:before{
       content: "";
       position: absolute;
-      bottom: 137px;
-      left: 25px;
-      width: 79px;
+      bottom: 121px;
+      left: 28px;
+      width: 76px;
       height: 3px;
       background: $colorOne;
     }
@@ -199,20 +201,21 @@ header{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    padding-bottom: 19%;
+    padding-bottom: 16%;
     .img{
       padding-top: 7px;
+      padding-left: 18px;
     }
     .text{
-      max-width: 450px;
+      max-width: 419px;
       p{
         font-family:$fontOne;
         color:  #141414;
         font-size: 16px;
         font-weight: 400;
-        line-height: 28px;
+        line-height: 24px;
         text-align: left;
-        padding-right: 54px;
+        padding-right: 63px;
       }
     }
   }
@@ -220,26 +223,26 @@ header{
 
 .second {
   text-align: center;
-  height: 1072px;
+  height: 1153px;
   .second-section_text{
-    max-width: 443px;
+    max-width: 476px;
     margin: 0 auto;
     h5{
       font-family:$fontTwo;
-      font-weight: 900;
-      font-size: 30px;
+      font-size: 32px;
       color: #141414;
       text-transform: uppercase;
-      padding-bottom: 62px;
+      padding-top: 79px;
+      padding-bottom: 53px;
       position: relative;
       max-width: 279px;
       margin: 0 auto;
       &:before{
         content: "";
         position: absolute;
-        bottom: 29px;
-        left: 92px;
-        width: 79px;
+        bottom: 24px;
+        left: 100px;
+        width: 78px;
         height: 3px;
         background: $colorOne;
       }
@@ -248,6 +251,8 @@ header{
       font-family:$fontOne ;
       font-weight: 500;
       font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 2px;
       color: #383838;
     }
   }
@@ -267,7 +272,7 @@ header{
     }
   }
   .tab {
-    padding-top: 50px;
+    padding-top: 65px;
     margin-bottom: 20px;
     position: relative;
     margin: 0 auto;
@@ -284,15 +289,16 @@ header{
     li {
       font-family:$fontOne;
       font-size: 17px;
+      letter-spacing: 1px;
       font-weight: 500;
       float: left;
       overflow: hidden;
       padding: 0;
       position: relative;
-      margin-right: 40px;
-      margin-left: 40px;
+      margin-right: 35px;
+      margin-left: 35px;
       text-transform: uppercase;
-      padding-bottom: 50px;
+      padding-bottom: 43px;
       &:before{
         content: "";
         position: absolute;
@@ -325,26 +331,25 @@ header{
 .third{
   text-align: center;
   background:url("../img/studio.png")no-repeat left ;
-  margin-top: -25%;
-  padding-bottom: 10%;
-  padding-top: 29%;
+  margin-top: -29%;
+  padding-bottom: 14%;
+  padding-top: 35%;
     h5{
       font-family:$fontTwo;
-      font-weight: 900;
-      font-size: 30px;
+      font-size: 32px;
       color: #141414;
       text-transform: uppercase;
-      padding-bottom: 62px;
-      padding-top: 137px;
+      padding-bottom: 109px;
+      padding-top: 18px;
       position: relative;
       max-width: 455px;
       margin: 0 auto;
       &:before{
         content: "";
         position: absolute;
-        bottom: 43px;
-        left: 181px;
-        width: 79px;
+        bottom: 81px;
+        left: 189px;
+        width: 77px;
         height: 3px;
         background: $colorOne;
       }
@@ -405,15 +410,15 @@ header{
 
       .text{
         height: 103px;
-        margin: 51px 0;
+        margin: 57px 0;
         background: rgba(25, 25, 25, 0.5);
         position: relative;
         &:before{
           content: "";
           position: absolute;
-          bottom: -16px;
-          left: 44%;
-          width: 55px;
+          bottom: -11px;
+          left: 43%;
+          width: 52px;
           height: 3px;
           background: $colorOne;
         }
@@ -439,22 +444,22 @@ header{
 
 .fourth {
   margin-bottom: -314px;
+  margin-top: -108px;
   h5{
     font-family:$fontTwo;
-    font-weight: 900;
-    font-size: 30px;
+    font-size: 32px;
     color: #141414;
     text-transform: uppercase;
-    padding-bottom: 62px;
+    padding-bottom: 90px;
     position: relative;
-    max-width: 365px;
+    max-width: 338px;
     margin: 0 auto;
     &:before{
       content: "";
       position: absolute;
-      bottom: 43px;
-      left: 144px;
-      width: 79px;
+      bottom: 59px;
+      left: 131px;
+      width: 77px;
       height: 3px;
       background: $colorOne;
     }
@@ -502,11 +507,11 @@ header{
     margin: 0 auto ;
     box-shadow: inset 1px -1px 49px -6px rgba(0,0,0,0.38);
     .rew{
-      max-width: 930px;
+      max-width: 900px;
       margin: 0 auto;
       padding-top: 58px;
       .img{
-        padding-bottom: 21px;
+        padding-bottom: 11px;
       }
       p{
         font-family:$fontOne;
@@ -514,7 +519,7 @@ header{
         font-size: 15px;
         line-height: 24px;
         color: #3e3e3e;
-        padding-bottom: 61px;
+        padding-bottom: 48px;
         &:nth-child(3){
           font-size: 17px;
          font-weight: 500;
@@ -532,7 +537,7 @@ header{
 
   .slide-nav {
     text-align: center;
-    padding-top: 54px;
+    padding-top: 50px;
   }
   .slide-nav ul {
     margin: 0;
@@ -544,7 +549,7 @@ header{
     height: 12px;
     background: #999999;
     cursor: pointer;
-    margin-left: .5em;
+    margin-right: .2em;
   }
   .slide-nav li.current {
     background: $colorOne;
@@ -554,25 +559,25 @@ header{
 
 .fifth{
   text-align: center;
-  padding-top: 456px;
-  padding-bottom: 208px;
+  padding-top: 383px;
+  padding-bottom: 176px;
   background: url("../img/gallery.png")no-repeat right;
   h5{
       font-family:$fontTwo;
-      font-weight: 900;
-      font-size: 30px;
+      font-size: 33px;
       color: #141414;
       text-transform: uppercase;
-      padding-bottom: 135px;
+      padding-top: 78px;
+      padding-bottom: 134px;
       position: relative;
-      max-width: 320px;
+      max-width: 300px;
       margin: 0 auto;
       &:before{
       content: "";
       position: absolute;
-      bottom: 103px;
-      left: 125px;
-      width: 79px;
+      bottom: 107px;
+      left: 112px;
+      width: 77px;
       height: 3px;
       background: $colorOne;
     }
@@ -588,13 +593,11 @@ header{
         padding-left: 0;
       }
       .img{
-        padding: 20px;
-        padding-left: 0;
         position: relative;
         .hover_text{
           position: absolute;
-          bottom: 38px;
-          left: 15px;
+          bottom: 17px;
+          left: 9px;
           right: 0;
           p{
             font-family:$fontOne;
@@ -619,29 +622,29 @@ header{
 
 .sixth{
   position: relative;
+  margin-top: -10px;
   h5{
     font-family:$fontTwo;
-    font-weight: 900;
-    font-size: 30px;
+    font-size: 32px;
     color: #141414;
     text-transform: uppercase;
-    padding-bottom: 135px;
+    padding-bottom: 110px;
     position: relative;
-    max-width: 195px;
+    max-width: 179px;
     margin: 0 auto;
     &:before{
       content: "";
       position: absolute;
-      bottom: 103px;
-      left: 53px;
-      width: 79px;
+      bottom: 83px;
+      left: 51px;
+      width: 77px;
       height: 3px;
       background: $colorOne;
     }
   }
   #map{
     width: 100%;
-    height: 654px;
+    height: 635px;
   }
 }
 
@@ -654,11 +657,12 @@ footer{
     display: flex;
     .flex_left{
       display: flex;
-      justify-content: space-around;
-      width: 60%;
+      justify-content: space-between;
+      width: 50%;
       .logo{
         padding-top: 17px;
         padding-bottom: 11px;
+        padding-left: 15px;
         img{
           width: 54px;
           height: 54px;
@@ -670,19 +674,16 @@ footer{
         font-weight: 400;
         line-height: 24px;
         color: #ffffff;
-        padding-top: 35px;
+        padding-top: 38px;
         a{
-          &:hover{
-            color: red;
-            transition: 0.5s;
-          }
+          color: red;
         }
       }
     }
     .flex_right{
       display: flex;
-      justify-content: space-around;
-      width: 40%;
+      justify-content: flex-end;
+      width: 50%;
       ul{
         li{
           display: inline-block;
@@ -718,6 +719,15 @@ footer{
 @media all and  (max-width: 1200px) {
 
   header{
+    nav{
+      width: auto;
+      .items{
+        padding-left: 20px;
+      }
+      .media{
+        padding-right: 10px;
+      }
+    }
     .logo{
       padding-left: 15px;
     }
@@ -737,7 +747,12 @@ footer{
       }
     }
   }
+  .third{
+  margin-top:0;
+  }
+
   .fourth {
+    margin-top: 0;
     .slide {
       max-width: 900px;
       .rew {
@@ -767,6 +782,7 @@ footer{
           padding: 20px;
           .hover_text{
             left: 32px;
+            bottom: 41px;
           }
         }
       }
