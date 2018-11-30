@@ -452,13 +452,13 @@ header{
     text-transform: uppercase;
     padding-bottom: 90px;
     position: relative;
-    max-width: 338px;
+    max-width: 343px;
     margin: 0 auto;
     &:before{
       content: "";
       position: absolute;
       bottom: 59px;
-      left: 131px;
+      left: 132px;
       width: 77px;
       height: 3px;
       background: $colorOne;
