@@ -520,17 +520,37 @@ header{
         line-height: 24px;
         color: #3e3e3e;
         padding-bottom: 48px;
+        position: relative;
         &:nth-child(3){
           font-size: 17px;
-         font-weight: 500;
+          font-weight: 500;
           line-height: 24px;
           color: #3e3e3e;
           padding-bottom: 90px;
+          &:after{
+            content: none;
+          }
+          &:before{
+            content: none;
+          }
         }
-        span{
+        &:after{
+          content: "\201D";
           color: $colorOne;
-          font-size: 20px;
+          font-size: 60px;
+          position: absolute;
+          right: -22px;
+          bottom: 22px;
         }
+        &:before{
+          content: "\201C";
+          color: $colorOne;
+          font-size: 60px;
+          position: absolute;
+          left: -30px;
+          bottom: 69px;
+        }
+
       }
     }
   }
