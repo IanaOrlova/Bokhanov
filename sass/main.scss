@@ -40,9 +40,10 @@ li{
 .video_clip{
   object-fit: cover;
   height: 225px;
-  max-width: 400px;
+  width: 400px;
   display: block;
   cursor: pointer;
+  margin: 0;
   &:hover{
     cursor: pointer;
   }
@@ -618,9 +619,10 @@ footer{
       }
     }
   }
+  
   .third{
-  margin-top: 0;
-    padding-top: 18%;
+    margin-top: 0;
+    padding-top: 42%;
   }
 
    .fifth{
