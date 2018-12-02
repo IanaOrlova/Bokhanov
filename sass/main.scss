@@ -316,7 +316,7 @@ header{
   background:url("../img/studio.png")no-repeat left;
   margin-top: -29%;
   padding-bottom: 14%;
-  padding-top: 35%;
+  padding-top: 29%;
     h5{
       font-family: $fontTwo;
       font-size: 32px;
@@ -519,7 +519,7 @@ header{
 
 
 footer{
-  background: rgba(25, 25, 25, 0.7);
+  background: rgba(25, 25, 25, 0.9);
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -546,8 +546,8 @@ footer{
         color: #ffffff;
         padding-top: 38px;
         a{
-          color: #d84755;
-          
+          color: $colorOne;
+
         }
       }
     }
@@ -620,11 +620,14 @@ footer{
   }
   .third{
   margin-top: 0;
+    padding-top: 18%;
   }
 
    .fifth{
+     margin-top: -105px;
     .gallery{
       display: block;
+      padding-bottom: 30px;
       .flex{
         max-width: 900px;
         margin: 0 auto;
