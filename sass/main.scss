@@ -409,13 +409,12 @@ header{
           max-width: 330px;
           margin: 0 auto;
           font-family: $fontOne;
-          font-weight: 500;
-          font-size: 18px;
+          font-size: 17px;
           line-height: 27px;
           color: #d1d0d0;
           span{
-            text-transform: uppercase;
             color: white;
+            font-weight: 500;
           }
         }
       }
