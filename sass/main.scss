@@ -555,6 +555,26 @@ footer{
       display: flex;
       justify-content: flex-end;
       width: 50%;
+      .tel_number{
+        position: relative;
+        cursor: pointer;
+        padding-top: 35px;
+        .whatsapp{
+          position: absolute;
+          left: -35px;
+        }
+        &:hover{
+          a{
+            color: $colorOne;
+            transition: 0.5s;
+          }
+          .whatsapp{
+            fill: $colorOne;
+            transition: 0.5s;
+          }
+        }
+      }
+
       ul{
         li{
           display: inline-block;
@@ -572,7 +592,7 @@ footer{
           }
         }
       }
-      p{
+      a{
         font-family: $fontTwo;
         padding-top: 35px;
         font-size: 18px;
